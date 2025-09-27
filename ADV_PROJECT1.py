@@ -5,6 +5,7 @@ In The Name of God
 
 ADV _ Project 1 
 
+APM: ......
 
 
 porozhe ee --> tozihat chie???
@@ -1169,8 +1170,54 @@ device=dv3
 
 #===================================
 #-----****-----------
-#--------SECTION 3-----------------
+#--------TASK  2, 3-----------------
        
+
+class Device:
+    
+    def __init__(self,location,group,device_type,device_name):
+        self.location=location
+        self.group=group
+        self.device_type=device_type
+        self.device_name=device_name 
+        self.status='off'
+
+
+    def turn_on(self):
+        print('Done!!!')
+        self.status='on'
+        #--_.code ejra mishe
+
+    def turn_off(self):
+        print('off')
+        self.status='off'
+        #code ejra mishe 
+       
+        
+    def get_status(self):
+        if self.status=='on':
+            return True
+        else:
+            return False
+        
+        
+        
+
+class Sensor:
+    
+    def __init__(self,location,group,sensor_type,sensor_name):
+        self.location=location
+        self.group=group
+        self.sensor_name=sensor_name
+        self.sensor_type=sensor_type
+                
+        
+    def read_data(self):
+        return 25
+
+
+
+
 class control_panel:
     
     def __init__(self):
